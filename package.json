@@ -44,9 +44,7 @@
     "url": "git+https://github.com/latifahiriyani/uas.git"
   },
   "keywords": [
-    "rest",
-    "api",
-    "nodejs"
+    "reactjs"
   ],
   "author": "latifahiriyani",
   "license": "ISC",

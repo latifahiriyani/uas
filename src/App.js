@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom'
 //import BootstrapComp from './Component/Class/BootstrapComp';
 import NavbarComp from './Component/Fungsional/NavbarComp';
 import HomePage from './Component/Fungsional/HomePage';
+import ListComp from './Component/Class/ListComp';
 
 //import DetailComp from './Component/Fungsional/DetailComp';
 
@@ -20,8 +21,7 @@ const App = () => {
       <NavbarComp />
       <switch>
       <Route exact path="/" component={HomePage} />
-        
-
+      <Route exact path="/obat" component={ListComp} />
 
 
        {/*<Route exact path="/detail/:id" component={DetailComp} />*/}

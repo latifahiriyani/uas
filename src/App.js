@@ -1,0 +1,37 @@
+App.js
+import React from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
+//import Parent from './Component/Class/Parent';
+//import BootstrapComp from './Component/Class/BootstrapComp';
+import NavbarComp from './Component/Fungsional/NavbarComp';
+
+//import DetailComp from './Component/Fungsional/DetailComp';
+import ListComp from './Component/Class/ListComp';
+
+
+//import logo from './logo.svg';
+//import Home from './Component/Fungsional/Home';
+//import Beranda from './Component/Class/Beranda';
+//import './App.css';
+
+const App = () => {
+  return (
+    <BrowserRouter>
+      <NavbarComp />
+      <switch>
+
+        <Route exact path="/obat" component={ListComp} />
+
+
+
+       {/*<Route exact path="/detail/:id" component={DetailComp} />*/}
+      </switch>
+    </BrowserRouter>
+
+
+
+
+  );
+}
+
+export default App;

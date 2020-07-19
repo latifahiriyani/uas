@@ -8,6 +8,7 @@ import ListComp from './Component/Class/ListComp';
 import TambahComp from './Component/Class/TambahComp';
 import EditComp from './Component/Class/EditComp';
 import ListAdminComp from './Component/Class/ListAdminComp';
+import TambahAdminComp from './Component/Class/TambahAdminComp';
 //import DetailComp from './Component/Fungsional/DetailComp';
 
 
@@ -27,6 +28,7 @@ const App = () => {
       <Route exact path="/obat/tambah" component={TambahComp} />
       <Route exact path="/obat/edit" component={EditComp} />
       <Route exact path="/admin" component={ListAdminComp} />
+      <Route exact path="/admin/tambahadmin" component={TambahAdminComp} />
        {/*<Route exact path="/detail/:id" component={DetailComp} />*/}
       </switch>
     </BrowserRouter>

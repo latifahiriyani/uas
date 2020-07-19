@@ -6,6 +6,7 @@ import NavbarComp from './Component/Fungsional/NavbarComp';
 import HomePage from './Component/Fungsional/HomePage';
 import ListComp from './Component/Class/ListComp';
 import TambahComp from './Component/Class/TambahComp';
+import EditComp from './Component/Class/EditComp';
 //import DetailComp from './Component/Fungsional/DetailComp';
 
 
@@ -23,6 +24,7 @@ const App = () => {
       <Route exact path="/" component={HomePage} />
       <Route exact path="/obat" component={ListComp} />
       <Route exact path="/obat/tambah" component={TambahComp} />
+      <Route exact path="/obat/edit" component={EditComp} />
 
        {/*<Route exact path="/detail/:id" component={DetailComp} />*/}
       </switch>

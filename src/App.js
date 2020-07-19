@@ -11,6 +11,7 @@ import ListAdminComp from './Component/Class/ListAdminComp';
 import TambahAdminComp from './Component/Class/TambahAdminComp';
 import EditAdminComp from './Component/Class/EditAdminComp';
 import ListSupplierComp from './Component/Class/ListSupplierComp';
+import TambahSupplierComp from './Component/Class/TambahSupplierComp';
 //import DetailComp from './Component/Fungsional/DetailComp';
 
 
@@ -33,6 +34,7 @@ const App = () => {
       <Route exact path="/admin/tambahadmin" component={TambahAdminComp} />
       <Route exact path="/admin/edit" component={EditAdminComp} />
       <Route exact path="/supplier" component={ListSupplierComp} />
+      <Route exact path="/supplier/tambahsupplier" component={TambahSupplierComp} />
        {/*<Route exact path="/detail/:id" component={DetailComp} />*/}
       </switch>
     </BrowserRouter>

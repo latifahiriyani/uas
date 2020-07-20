@@ -13,6 +13,8 @@ class TambahAdminComp extends PureComponent {
             nama_admin: '',
             alamat: '',
             no_tlp: '',
+            email: '',
+            password: '',
             response: '',
             display: 'none'
 
@@ -28,7 +30,9 @@ class TambahAdminComp extends PureComponent {
             kode_admin: this.state.kode_admin,
             nama_admin: this.state.nama_admin,
             alamat: this.state.alamat,
-            no_tlp: this.state.no_tlp
+            no_tlp: this.state.no_tlp,
+            email: this.state.email,
+            password: this.state.password
         }).then(json => {
             if (json.data.status === 200) {
                 this.setState({
@@ -78,6 +82,20 @@ class TambahAdminComp extends PureComponent {
                         <Label for="no_tlp" sm={2}>No Telepon</Label>
                         <Col sm={10}>
                             <Input type="text" name="no_tlp" value={this.state.no_tlp} onChange={this.handleChange} placeholder="Masukan No Telepon" />
+                        </Col>
+                    </FormGroup>
+
+                    <FormGroup row>
+                        <Label for="email" sm={2}>Email</Label>
+                        <Col sm={10}>
+                            <Input type="text" name="email" value={this.state.email} onChange={this.handleChange} placeholder="Masukan Email" />
+                        </Col>
+                    </FormGroup>
+
+                    <FormGroup row>
+                        <Label for="password" sm={2}>Password</Label>
+                        <Col sm={10}>
+                            <Input type="text" name="password" value={this.state.password} onChange={this.handleChange} placeholder="Masukan Password" />
                         </Col>
                     </FormGroup>
 

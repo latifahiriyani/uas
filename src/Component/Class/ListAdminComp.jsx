@@ -73,6 +73,8 @@ class ListAdminComp extends PureComponent {
                             <th>Nama Admin</th>
                             <th>Alamat</th>
                             <th>No Telepon</th>
+                            <th>Email</th>
+                            <th>Password</th>
                             <th>Aksi</th>
                         </tr>
                     </thead>
@@ -83,6 +85,8 @@ class ListAdminComp extends PureComponent {
                                 <td>{admin.nama_admin}</td>
                                 <td>{admin.alamat}</td>
                                 <td>{admin.no_tlp}</td>
+                                <td>{admin.email}</td>
+                                <td>{admin.password}</td>
                                 <td>
                                     <Link to=
                                         {
@@ -93,7 +97,10 @@ class ListAdminComp extends PureComponent {
                                                     kode_admin: admin.kode_admin,
                                                     nama_admin: admin.nama_admin,
                                                     alamat: admin.alamat,
-                                                    no_tlp: admin.no_tlp
+                                                    no_tlp: admin.no_tlp,
+                                                    email: admin.email,
+                                                    password: admin.password
+
                                                 }
                                             }
                                         }>

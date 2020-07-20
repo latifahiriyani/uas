@@ -13,6 +13,10 @@ import EditAdminComp from './Component/Class/EditAdminComp';
 import ListSupplierComp from './Component/Class/ListSupplierComp';
 import TambahSupplierComp from './Component/Class/TambahSupplierComp';
 import EditSupplierComp from './Component/Class/EditSupplierComp';
+import LoginComp from './Component/Fungsional/LoginComp';
+import DaftarComp from './Component/Fungsional/DaftarComp';
+
+
 //import DetailComp from './Component/Fungsional/DetailComp';
 
 
@@ -27,7 +31,9 @@ const App = () => {
     <BrowserRouter>
       <NavbarComp />
       <switch>
-      <Route exact path="/" component={HomePage} />
+      <Route exact path="/" component={LoginComp} />
+      <Route exact path="/HomePage" component={HomePage} />
+      <Route exact path="/daftar" component={DaftarComp}/>
       <Route exact path="/obat" component={ListComp} />
       <Route exact path="/obat/tambah" component={TambahComp} />
       <Route exact path="/obat/edit" component={EditComp} />

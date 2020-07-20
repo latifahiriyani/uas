@@ -16,6 +16,8 @@ class EditAdminComp extends PureComponent {
             nama_admin: this.props.location.state.nama_admin,
             alamat: this.props.location.state.alamat,
             no_tlp: this.props.location.state.no_tlp,
+            email: this.props.location.state.email,
+            password: this.props.location.state.password,
             response: '',
             display: 'none'
         }
@@ -32,6 +34,8 @@ class EditAdminComp extends PureComponent {
             nama_admin: this.state.nama_admin,
             alamat: this.state.alamat,
             no_tlp: this.state.no_tlp,
+            email: this.state.email,
+            password: this.state.password,
         });
 
         axios.put(api + '/ubahadmin', data)
@@ -86,6 +90,20 @@ class EditAdminComp extends PureComponent {
                         <Label for="no_tlp" sm={2}>No Telepon</Label>
                         <Col sm={10}>
                             <Input type="text" name="no_tlp" value={this.state.no_tlp} onChange={this.handleChange} placeholder="Masukan No Telepon" />
+                        </Col>
+                    </FormGroup>
+
+                    <FormGroup row>
+                        <Label for="email" sm={2}>Email</Label>
+                        <Col sm={10}>
+                            <Input type="text" name="email" value={this.state.email} onChange={this.handleChange} placeholder="Masukan Email" />
+                        </Col>
+                    </FormGroup>
+
+                    <FormGroup row>
+                        <Label for="password" sm={2}>password</Label>
+                        <Col sm={10}>
+                            <Input type="text" name="password" value={this.state.password} onChange={this.handleChange} placeholder="Masukan Password" />
                         </Col>
                     </FormGroup>
 

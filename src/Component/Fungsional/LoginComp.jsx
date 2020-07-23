@@ -16,7 +16,7 @@ const LoginComp = () => {
     }
     return (
 
-        <div style={{ marginTop: "100px" }}>
+        <div style={{ marginTop: "50px" }}>
             <div className="container">
                 <div className="row justify-content-center">
                     <div className="col-md-6">
@@ -25,7 +25,7 @@ const LoginComp = () => {
                                 <div className="form-group">
                                     <div className="text-left">
                                     <Card>
-                <CardImg top height="150" width="100%" src="/images/1024-500.png" alt="" />
+                <CardImg top height="200" width="100%" src="/images/1024-500.png" alt="" />
                 
             </Card>
                                     <label>Email</label>
@@ -49,9 +49,9 @@ const LoginComp = () => {
                                         
                                     </div>
                                     
-                                    <div className="col-md-6 text-right">
-                                        <Link to="/daftar" className="">
-                                            Halaman Pendaftaran
+                                    <div className=" text-right">
+                                        <Link to="/register" className="">
+                                            Belum punya akun? Daftar disini
                             </Link>
                            
                                     </div>

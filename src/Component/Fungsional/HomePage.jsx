@@ -1,18 +1,18 @@
-import React from 'react';
-import { Button, Card, CardBody, CardTittle, CardText, CardSubtitle, CardImg } from 'reactstrap';
+import React from 'react'
+import { Media } from 'reactstrap'
+import './CSS/Blog.css';
 
+//tampilan homepage
 
-const HomePage = (props) => {
-
+function HomePage() {
     return (
+
         <div>
-            <Card>
-                <CardImg top height="300" width="100%" src="/images/1024-500.png" alt="" />
-                
-            </Card>
-            
-            <h2></h2>
+            <h2 className="welcome">SELAMAT DATANG !</h2>
+            <img top height="400" width="100%" className="homeblog" src="images/1024-500.png" alt="" />
+          
         </div>
+
     )
 }
 

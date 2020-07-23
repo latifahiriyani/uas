@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import {Link} from 'react-router-dom'
 import {
     Collapse,
     Navbar,
@@ -9,7 +10,6 @@ import {
     NavLink,
     UncontrolledDropdown,
     DropdownToggle,
-    
     DropdownMenu,
     DropdownItem,
     NavbarText
@@ -56,9 +56,28 @@ const NavbarComp = (props) => {
                     <DropdownItem>
                     <NavLink href="/supplier">SUPPLIER</NavLink>
                     </DropdownItem>
-                    
                   </DropdownMenu>
+                  
                 </UncontrolledDropdown>
+                <UncontrolledDropdown nav inNavbar>
+                  
+                  <DropdownToggle nav caret>
+                    MASUK/KELUAR
+                  </DropdownToggle>
+                  <DropdownMenu right>
+                  <DropdownItem>
+                  <NavLink href="/barangmasuk">BARANG MASUK</NavLink>
+                    </DropdownItem>
+                    <DropdownItem>
+                    <NavLink href="/barangkeluar">BARANG KELUAR</NavLink>
+                    </DropdownItem>
+                
+                  </DropdownMenu>
+                  
+                </UncontrolledDropdown>
+
+                
+                
                {/* <UncontrolledDropdown nav inNavbar>
                   
               <DropdownToggle nav caret>
@@ -85,8 +104,15 @@ const NavbarComp = (props) => {
                         <NavItem>
                             <NavLink href="/useeffects">Use Effects</NavLink>
                        </NavItem>*/}
+                       
                     </Nav>
-                        
+                    <NavbarText> <Link to="/register" className="">
+                                              DAFTAR | 
+                              </Link></NavbarText>
+                              
+                    <NavbarText> <Link to="/" className="">
+                                               | LOG OUT
+                              </Link></NavbarText>
                 </Collapse>
             </Navbar>
         </div>

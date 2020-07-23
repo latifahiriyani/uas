@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 const api = 'http://localhost:3001'
 
-class DaftarComp extends PureComponent {
+class RegisterComp extends PureComponent {
     constructor(props) {
         super(props)
         this.state = {
@@ -51,7 +51,7 @@ class DaftarComp extends PureComponent {
     render() {
         return (
             <Container>
-                <h4>Form Halaman Pendaftaran Admin</h4>
+                <h4>Form Pendaftaran Admin</h4>
                 <Alert color="secondary" style={{ display: this.state.display }}>
                     {this.state.response}
                 </Alert>
@@ -105,8 +105,11 @@ class DaftarComp extends PureComponent {
                                 <Button color="primary" type="button" onClick={this.Addadmin}>DAFTAR</Button>
                             
                                 <button> 
-                                        <Link to="/" className="btn btn-primary text-left">MASUK</Link>
+                                        <Link to="/" className="btn btn-primary ">MASUK</Link>
                                         </button>
+
+                            
+                            
                             </Col>
                         </Row>
                     </FormGroup>
@@ -117,4 +120,4 @@ class DaftarComp extends PureComponent {
     }
 }
 
-export default DaftarComp
+export default RegisterComp
